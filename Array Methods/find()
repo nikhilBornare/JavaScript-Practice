@@ -1,0 +1,5 @@
+const numbers = [5, 10, 15, 20];
+
+const firstGreaterThanTen = numbers.find(num => num > 10);
+
+console.log(firstGreaterThanTen);  // Output: 15
