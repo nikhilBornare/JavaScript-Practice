@@ -1,0 +1,10 @@
+const fruits = ['apple', 'banana', 'cherry'];
+
+fruits.forEach(fruit => {
+  console.log(fruit);
+});
+
+// Output:
+// apple
+// banana
+// cherry
