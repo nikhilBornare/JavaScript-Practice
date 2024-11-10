@@ -1,0 +1,25 @@
+The splice() method is used to modify an array by removing, replacing, or adding elements at a specified index.
+
+1) Removing elements:
+let fruits = ['apple', 'banana', 'cherry', 'date'];
+
+// Removing 2 elements starting from index 1
+fruits.splice(1, 2);
+
+console.log(fruits);  // Output: ['apple', 'date']
+
+2) Adding elements:
+let fruits = ['apple', 'banana', 'cherry'];
+
+// Adding 'orange' at index 1 without removing anything
+fruits.splice(1, 0, 'orange');
+
+console.log(fruits);  // Output: ['apple', 'orange', 'banana', 'cherry']
+
+3) Replacing elements:
+let fruits = ['apple', 'banana', 'cherry'];
+
+// Replacing 'banana' with 'grape' at index 1
+fruits.splice(1, 1, 'grape');
+
+console.log(fruits);  // Output: ['apple', 'grape', 'cherry']
