@@ -1,2 +1,6 @@
-# New Folder
-This is a new folder created via the GitHub web interface.
+const numbers = [1, 2, 3];
+
+const newLength = numbers.push(4);
+
+console.log(numbers);  // Output: [1, 2, 3, 4]
+console.log(newLength);  // Output: 4
