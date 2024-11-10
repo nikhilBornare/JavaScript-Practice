@@ -1,0 +1,6 @@
+const numbers = [1, 2, 3, 4];
+
+const lastElement = numbers.pop();
+
+console.log(lastElement);  // Output: 4
+console.log(numbers);  // Output: [1, 2, 3]
