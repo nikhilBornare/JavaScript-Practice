@@ -1,0 +1,5 @@
+let text = "JavaScript is fun";
+
+let part = text.substring(0, 10);
+
+console.log(part);  // Output: "JavaScript"
