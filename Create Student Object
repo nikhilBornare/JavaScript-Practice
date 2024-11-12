@@ -1,0 +1,21 @@
+Objective: Work with JavaScript objects and properties.
+Instructions:
+Create an object called student with properties: name, age, and grade.
+Write a method called displayInfo() that logs the student's name, age, and grade.
+Call the displayInfo() method :-
+
+const student = {
+    name :"Nikhil",
+    age :22 ,
+    grade: "A",
+    
+    displayInfo : function(){
+      console.log(`name: ${this.name} age: ${this.age} grade: ${this.grade}`);
+    }
+};
+student.displayInfo();
+
+
+Output:
+
+name: Nikhil age: 22 grade: A
