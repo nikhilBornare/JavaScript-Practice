@@ -1,0 +1,29 @@
+Simple JavaScript Program to Check if a Number is Odd or Even:
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+
+let even = [];
+let odd = [];
+
+for(let i = 0 ; i<arr.length ; i++){
+  if (arr[i] % 2 == 0){
+    even.push(arr[i]);
+  }
+  else{
+    odd.push(arr[i]);
+  }
+}
+console.log(even);
+console.log(odd);
+
+
+Taking User input using Prompt command :
+
+const number = parseInt(prompt("Enter a number: "));
+
+if(number % 2 ===0){
+    console.log(number + " is even number");
+}
+else{
+    console.log(number + " is odd number");
+}
