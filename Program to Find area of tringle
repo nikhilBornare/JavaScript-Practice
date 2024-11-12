@@ -1,0 +1,11 @@
+const length = prompt("Enter the length of Triangle: ");
+const breadth = prompt("Enter the breadth of Triangle: ");
+
+const area = length * breadth * 0.5;
+
+console.log(area);
+
+Output : 
+Enter the length of Triangle: 6
+Enter the breadth of Triangle: 4
+12
