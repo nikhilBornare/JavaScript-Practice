@@ -6,10 +6,8 @@ function isPrime(n){
         if (n % i ===0){
             return `${n} is not a prime number`
         }
-        else{
-            return `${n} is a Prime number`
-        }
     }
+     return `${n} is a Prime number`
 }
 
 console.log(isPrime(13))
