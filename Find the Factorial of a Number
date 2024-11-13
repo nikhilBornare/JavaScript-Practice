@@ -1,0 +1,33 @@
+let number = parseInt(prompt("Enter a number: "));
+
+if(number < 0){
+  console.log('Error! Factorial for negative number does not exist.')
+}
+else if (number === 0){
+  console.log(`Factorial of ${number} is 1 `)
+}
+else {
+  let fact = 1;
+  for(let i = 1 ; i<=number ; i++){
+    fact *= i;
+  }
+  console.log(`Factorial of ${number} is ${fact}`) 
+}
+
+
+USING RECURSION
+
+function factorial(n) {
+  if (n < 0) {
+    return 'Error! Factorial for negative number does not exist.';
+  }
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+let number = parseInt(prompt("Enter a number: "));
+
+let result = factorial(number);
+console.log(`Factorial of ${number} is ${result}`);
