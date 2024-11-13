@@ -1,0 +1,14 @@
+function countdown(start) {
+  let timeRemaining = start;
+
+  const interval = setInterval(function() {
+    console.log(`Time remaining: ${timeRemaining}s`);
+    timeRemaining--;
+
+    if (timeRemaining < 0) {
+      clearInterval(interval);
+      console.log("Countdown finished!");
+    }
+  }, 2000);
+}
+countdown(5);
