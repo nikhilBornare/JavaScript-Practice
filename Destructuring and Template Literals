@@ -1,0 +1,18 @@
+10. Destructuring and Template Literals
+Objective: Use destructuring and template literals to simplify code.
+Instructions:
+Create an object employee with properties: firstName, lastName, position.
+Destructure the object and log a sentence like: "John Doe works as a Developer."
+Use template literals for the string.
+SOLUTION:
+
+const employee = {
+  firstName : "John",
+  lastName : "Doe",
+  position : "Software Developer"
+};
+
+const {firstName , lastName , position} = employee;
+
+
+console.log(`${firstName} ${lastName} works as a ${position}`);
