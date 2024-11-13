@@ -1,0 +1,17 @@
+function Person(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.greet = function() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`);
+  };
+}
+
+let person1 = new Person("John", "Doe", 30);
+let person2 = new Person("Harish", "Patel", 26)
+person1.greet();
+person2.greet();
+
+Output : 
+Hello, my name is John Doe and I am 30 years old.
+Hello, my name is Harish Patel and I am 26 years old.
