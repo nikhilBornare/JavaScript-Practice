@@ -1,0 +1,27 @@
+async function fetchMultipleApis() {
+  const urls = [
+    'https://fake-store-api.mock.beeceptor.com/api/products',
+    'https://fake-store-api.mock.beeceptor.com/api/users',
+    'https://fake-store-api.mock.beeceptor.com/api/carts'
+  ];
+
+  try {
+    // Use Promise.all to fetch all APIs concurrently
+    const results = await Promise.all(
+      urls.map(url => fetch(url).then(response => response.json()))
+    );
+
+    // The results array will hold the data for each URL in the same order
+    const [products, users, carts] = results;
+
+    // Handle the fetched data
+    console.log('Products:', products);
+    console.log('Users:', users);
+    console.log('Carts:', carts);
+  } catch (error) {
+    // Handle any errors that occur during the fetch
+    console.error('Error fetching data:', error);
+  }
+}
+
+fetchMultipleApis();
