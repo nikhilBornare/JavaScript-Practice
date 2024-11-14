@@ -1,0 +1,12 @@
+Count Words in a Sentence: Calculate the number of words in a string, where words are 
+separated by spaces.
+
+let str = "hello, my name is nikhil";
+let count = 1;
+ for(let i =0 ; i<str.length ; i++){
+    if(str[i] === (" ")){
+        count++
+    }
+   
+}
+console.log(count)
