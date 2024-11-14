@@ -1,0 +1,7 @@
+const arr = [{a:1, b: 2, c: 3, d:6} ,
+             {a:4, b: 5, c: 3, d:6} ,
+             { a:8,b: 9, c: 3, d:6} ]
+             
+const valueOfC = arr.map(value => value.c);
+
+console.log(valueOfC);
