@@ -1,0 +1,7 @@
+const filename = "myFile.tsx";
+
+const extension = filename.split('.').pop();
+
+console.log(extension); 
+
+OUTPUT : tsx
