@@ -1,0 +1,7 @@
+let str = "hello, my name is nikhil";
+
+let result = str.split(" ").map(word=>word.charAt(0).toUpperCase()+ word.slice(1).toLowerCase()).join(" ");
+
+console.log(result);
+
+Output : Hello, My Name Is Nikhil
