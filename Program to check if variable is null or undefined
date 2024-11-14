@@ -1,0 +1,18 @@
+function checkNullOrUndefined(value) {
+    if (value === null) {
+        console.log("The value is null.");
+    } else if (value === undefined) {
+        console.log("The value is undefined.");
+    } else {
+        console.log("The value is neither null nor undefined.");
+    }
+}
+
+
+let a = null;
+let b;
+let c = 42;
+
+checkNullOrUndefined(a);  
+checkNullOrUndefined(b);  
+checkNullOrUndefined(c);  
