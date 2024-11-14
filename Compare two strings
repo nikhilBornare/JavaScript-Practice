@@ -1,0 +1,8 @@
+let str = "My Name Is Nikhil";
+let str2 = "my name is nikhil";
+
+if(str.toUpperCase() === str2.toUpperCase()){
+  console.log("Strings are same")
+}else{
+  console.log("Strings are not same")
+}
