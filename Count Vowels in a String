@@ -1,0 +1,25 @@
+Method 1) Count the Number of Vowels Using Regex
+function vowels(str){
+    const count = str.match(/[aeiou]/gi).length;
+    return count;
+}
+const string = prompt("Enter string: ");
+console.log(vowels(string))
+
+
+Method 2) Using For Loop
+function countVowels(str) {
+    let vowels = 'aeiouAEIOU'; 
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+let str = prompt("Enter string: ");
+console.log(countVowels(str));  
