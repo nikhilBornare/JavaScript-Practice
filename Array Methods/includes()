@@ -1,0 +1,9 @@
+const myArray = [10, 20, 30, 40, 50];
+
+const valueToCheck = 30;
+
+if (myArray.includes(valueToCheck)) {
+  console.log(`${valueToCheck} is in the array.`);
+} else {
+  console.log(`${valueToCheck} is not in the array.`);
+}
