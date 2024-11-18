@@ -2,9 +2,9 @@
 function addTask() {
   // Get the task input value
   const taskInput = document.getElementById("taskInput");
-  const taskText = taskInput.value.trim(); // Remove extra spaces
+  const taskText = taskInput.value.trim(); 
 
-  // If input is empty, show an alert
+  
   if (taskText === "") {
     alert("Please enter a task!");
     return;
@@ -14,25 +14,22 @@ function addTask() {
   const li = document.createElement("li");
   li.textContent = taskText; // Set the text of the task
 
-  // Create a button to mark the task as completed
   const completeButton = document.createElement("button");
-  completeButton.textContent = "✔"; // Checkmark icon
+  completeButton.textContent = "✔";
   completeButton.onclick = function () {
     li.classList.toggle("completed"); // Toggle 'completed' class to cross out the task
   };
 
-  // Create a button to delete the task
   const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete"; // Delete button text
+  deleteButton.textContent = "Delete"; 
   deleteButton.onclick = function () {
     li.remove(); // Remove the task from the list
   };
 
-  // Create a button to edit the task
   const editButton = document.createElement("button");
-  editButton.textContent = "Edit"; // Edit button text
+  editButton.textContent = "Edit"; 
   editButton.onclick = function () {
-    // Prompt the user to edit the task
+    
     const newTaskText = prompt("Edit your task:", li.firstChild.textContent);
 
     // If the user entered a new task and it's not empty, update the task text
